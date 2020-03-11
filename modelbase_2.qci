@@ -1,0 +1,12 @@
+
+$modelname MCModelPack/$mdlname$.mdl
+
+$model "Body" $mesh_main$
+$applytextures // Call macro
+
+$sequence idle $mesh$.smd loop fps 1.00
+$collisionmodel $mesh$.smd
+{
+	$concave
+	$mass 50.0
+}
